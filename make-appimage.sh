@@ -18,6 +18,9 @@ export PATH_MAPPING_HARDCODED='libgraphs.so*' # Needed for locale, as the locale
 export STARTUPWMCLASS=se.sjoerd.Graphs # Default to Wayland's wmclass. For X11, GTK_CLASS_FIX will force the wmclass to be the Wayland one.
 export GTK_CLASS_FIX=1
 
+wget https://raw.githubusercontent.com/Samueru-sama/Anylinux-AppImages/refs/heads/main/useful-tools/quick-sharun.sh -O /usr/local/bin/quick-sharun
+chmod +x /usr/local/bin/quick-sharun
+
 # Deploy dependencies
 quick-sharun /usr/bin/graphs \
              /usr/lib/libgirepository* \
